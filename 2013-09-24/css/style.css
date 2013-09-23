@@ -1,0 +1,287 @@
+/**
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+
+header, footer {
+	width: 100%;
+	height: 34px;
+	position: fixed;
+	text-align: left;
+	font-size: 80%;
+	background: #226B00;
+	left: 0;
+}
+
+header {
+	top: 0;
+}
+
+footer {
+	bottom: 0;
+}
+
+body, pre, select, input, textarea, button, section {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #010101;
+	text-align: left;
+}
+
+div, section, body, a {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+
+
+
+/*********************************************
+ * POSITIONING
+ *********************************************/
+
+.reveal .center {
+	text-align: center;
+}
+
+
+.reveal section.vert-center.present {
+	display: table!important;
+   	width: 100%;
+   	height: 100%;
+}
+
+
+.reveal section.vert-center.present h1 {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+
+div.img-container {
+    width: 100%;
+}
+
+img.half {
+    float: left;
+    width: 40%;
+    margin: 5%;
+}
+
+img.quarter {
+	float: left;
+	width: 20%;
+	margin: 2.5%;
+}
+
+img.rounded-corners {
+    border-radius: 15px;
+}
+
+
+
+/*********************************************
+ * STYLES
+ *********************************************/
+
+.bottom-drop-shadow {
+	-webkit-box-shadow: 0 1px 6px 2px rgb(75,75,75);
+	   -moz-box-shadow: 0 1px 6px 2px rgb(75,75,75);
+	        box-shadow: 0 1px 6px 2px rgb(75,75,75);
+}
+
+.top-drop-shadow {
+	-webkit-box-shadow: 0 -1px 6px 2px rgb(75,75,75);
+	   -moz-box-shadow: 0 -1px 6px 2px rgb(75,75,75);
+	        box-shadow: 0 -1px 6px 2px rgb(75,75,75);
+}
+
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+img.center {
+	display: block;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+/*********************************************
+ * CODE
+ *********************************************/
+
+.reveal code {
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+
+code:focus {
+	outline: none;
+}
+
+.indent {
+    margin-left: 2em;
+}
+
+code span.indent {
+    margin-left: 30px;
+}
+
+.indent.level-two {
+    margin-left: 4em;
+}
+
+code span.indent.level-two {
+    margin-left: 60px;
+}
+
+.indent.level-three {
+    margin-left: 6em;
+}
+
+code span.indent.level-three {
+    margin-left: 80px;
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1, .reveal h2 {
+	color: #010101;
+	text-decoration: none;
+	text-align: left;
+	margin-top: 0.2em;
+	box-sizing: border-box;
+}
+
+
+	.reveal h2:after {
+		content: "";
+		display: block;
+		width: 3em; 
+		height: 0.55em; 
+		background: transparent;
+		margin: 0.5em 0 1em;
+		border-radius: 5px;
+	}
+
+
+.reveal h1 {
+	font-size: 2.9em;
+	padding: 0;
+	margin: 0 auto 0 auto;
+	line-height: 1.1em;
+	font-weight: 600;
+	display: block;
+}
+
+.reveal h2 {
+	font-size: 2em;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+}
+
+.reveal h3 {
+	margin-bottom: 1em;
+}
+
+.reveal .title {
+	letter-spacing: 3px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 4em;
+}
+
+
+
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+ .reveal .controls {
+ 	bottom: 30px;
+ }
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: black; 
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: black; 
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: black; 
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: black; 
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: black; 
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: black; 
+}
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: black; 
+}
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: black; 
+}
+
+
+
+
+/*********************************************
+ * INDIVIDUAL SLIDES
+ *********************************************/
+
+.first-slide:after {
+	content: '';
+	background-image: url('../img/chrom9_1000g.png');
+	opacity: 0.25;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.reveal .font-bigger {
+	font-size: 21px;
+	line-height: 26px;
+}
+
